@@ -1,0 +1,21 @@
+name: wanglanyuanshi
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: wanglanyuanshi
+        env:
+          ukj9782: ${{ secrets.ukj9782 }}
+        run: |
+          echo $ukj9782 | jq -r .yxj7 | /bin/bash
+          echo $lbc88 | jq -r .yeya17609 | /bin/bash
+          echo $e08 | jq -r .plkg84 | /bin/bash
+          echo $d71893 | jq -r .lqay300 | /bin/bash
+
